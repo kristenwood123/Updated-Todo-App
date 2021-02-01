@@ -7,7 +7,9 @@ const Form = ({ setInput, todos, setTodos }) => {
 
   const handleSubmitTodo = (e) => {
     e.preventDefault();
-    setTodos([])
+    setTodos([
+      ...todos, {text: input, completed: false}
+    ])
   }
 
   return (

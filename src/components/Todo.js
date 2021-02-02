@@ -13,7 +13,7 @@ const Todo = ({ text, todo, todos, setTodos }) => {
           ...item, completed: !item.completed
         }
       }
-      return item
+      return item;
     }))
   }
     
